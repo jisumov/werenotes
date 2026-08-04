@@ -1,33 +1,33 @@
-# Windows Subsystem for Linux (WSL) Setup
+# Windows Subsystem for Linux (WSL)
 
-## Prerequisites
+## Installation
 
-- Open Terminal.
+- Open Terminal
 - Install WSL → `wsl --install`
 - Enable Virtual Machine → `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
-- Turn Windows features on or off.
-- Enable Windows Subsystem for Linux.
+- Turn Windows features on or off
+- Enable `Windows Subsystem for Linux`
 
 ## Ubuntu in WSL
 
-- Create UNIX username.
-- Create secure password.
-- Enable Ubuntu default profile.
+- Create UNIX username
+- Create secure password
+- Default profile → `Ubuntu`
 
 ## SSH Key
 
 ### Terminal
 
 - Create SSH Key → `ssh-keygen -t ed25519 -C "<email@domain.com>"`
-- Create passphrase.
+- Create passphrase
 - Initialize SSH agent → `eval "$(ssh-agent -s)"`
 - Add key to the SSH agent → `ssh-add ~/.ssh/id_ed25519`
 - Show SSH key → `cat ~/.ssh/id_ed25519.pub`
 
 ### GitHub
 
-- Settings → Access → SSH and GPG keys → New SSH key.
-- Paste all the SSH key.
+- Settings → Access → SSH and GPG keys → New SSH key
+- Paste all the SSH key
 
 ## Repository Flow
 
@@ -42,8 +42,8 @@
 
 ### GitHub
 
-- Your repositories → New → Repository name → Add README file → Create repository.
-- Copy SSH link.
+- Your repositories → New → Repository name → Add README file → Create repository
+- Copy SSH link
 
 ### Terminal
 
