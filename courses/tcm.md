@@ -45,3 +45,9 @@
 - Disable Windows Defender AntiSpyware → `reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f`
 - Git → `https://git-scm.com` → Git for Windows /x64 Setup
 - Clone course repository → `git clone https://github.com/MalwareCube/SOC101.git`
+
+### Ubuntu
+
+**Source**
+
+- Ubuntu Desktop → `https://ubuntu.com/download/desktop`
