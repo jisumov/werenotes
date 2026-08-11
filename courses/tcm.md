@@ -51,3 +51,20 @@
 **Source**
 
 - Ubuntu Desktop → `https://ubuntu.com/download/desktop`
+
+**Specifications**
+
+- Base Memory → `4096 MB`
+- Number of CPUs → `2`
+- Disk Size → `25 GB`
+
+**Installation**
+
+- Update system packages → `sudo apt update`
+- Install required packages → `sudo apt install bzip2 tar gcc make perl git`
+- Install the generic kernel headers → `sudo apt install linux-headers-generic`
+- Install our system-specific kernel headers → `sudo apt install linux-headers-$(uname -r)`
+- Devices → Insert Guest Additions CD Image... → `cd /run/media/$(whoami)/VBox_GAs_*` → `sudo ./VBoxLinuxAdditions.run` → `sudo systemctl reboot -i`
+- View → `Full-screen Mode`
+- Devices → Shared Clipboard → `Bidirectional`
+- Machine → `Take Snapshot...`
