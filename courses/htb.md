@@ -60,7 +60,7 @@
 
 - Based on Cyber Kill Chain and MITRE ATT&CK
 
-### Cyber Kill Chain
+## Cyber Kill Chain
 
 - Attack lifecycle → Recursive stages
 
@@ -123,3 +123,25 @@
 ### TheHive
 
 - Case management platform → Efficiently handle incidents
+
+## Incident Handling Process Overview
+
+- Capability for organizations → Prepare → Detect → Respond to malicious events
+    - Preparation → Detection & Analysis → Containment, Eradication & Recovery → Post-Incident Activity
+
+### Investigation
+
+- Discover patient zero
+- Create incident timeline
+- Determine tools and malware
+- Document compromised systems
+- Specify actions on objectives
+
+### Recovery
+
+- Create & implement recovery plan → Business continuity & Disaster recovery
+
+### Handled Incident
+
+- Report → Root cause analysis
+- Lessons learned → Improvements
