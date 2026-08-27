@@ -145,3 +145,139 @@
 
 - Report → Root cause analysis
 - Lessons learned → Improvements
+
+## Preparation Stage
+
+- Establish incident handling capability
+- Implement appropiate protective measures
+    - Server hardening
+    - Active Directory tiering
+    - Multi-Factor Authentication
+    - Privileged access management
+
+### Preparation Prerequisites
+
+- Skilled incident handling team members
+- Trained workforce → Security awareness
+- Clear policies & documentation
+- Tools → Software & Hardware
+
+### Clear Policies & Documentation
+
+- Up-to-date information
+    - Roles
+        - Incident Handling Team
+    - Contacts
+        - Incident Handling Team
+        - Legal & Compliance Department
+        - Management Team
+        - IT Support
+        - Communication & Media Relations Department
+        - Law Enforcement
+        - Internet Service Providers
+        - Facility Management
+        - External Incident Response Team
+    - Incident
+        - Response policy, plan and procedures
+        - Information sharing policy and procedures
+    - Availability
+        - Baselines → Golden image & clean state environment
+        - Network diagrams
+        - Asset management database
+        - Forensic & Investigative cheat sheets
+    - User accounts with privileges → Tackle the incident → To be disabled and password reset once it is over
+    - Agile procurement process → Faster acquisitions of necessary resources
+
+- Customer data breach → Law Enforcement time threshold → Compliance with GDPR
+- Effective reporting
+    - Timestamps
+    - Performed activity → Actor → Results
+    - Answer → Who → What → When → Where → Why → How
+
+### Tools (Software & Hardware)
+
+- Jump bad → Necessary tools
+    - Hardware
+        - Forensic workstations → Preserve disk images & logs
+        - Write blockers
+        - Network & power cables
+        - Hard drives & Switchers
+        - Screwdrivers & tweezers
+        - Secure facility → Storage & Investigation
+    - Software
+        - Digital forensic image acquisition
+        - Memory & Network capture
+        - Live response capture
+        - Log analysis
+        - IOCs creator → Hunt across the organization
+        - Encryption
+        - Ticket tracking system
+    - Miscellaneous 
+        - Chain of Custody forms
+        - Independent incident handling system
+        - Secured communication channels
+
+
+### Protective Measures
+
+**DMARC**
+
+- Built on top of SPF & DKIM
+- Spoofed email → Gets rejected
+- Email sending services → Failed DMARC → May be False Positives
+
+**Endpoint Hardening & EDR**
+
+- Corporate devices → Malware entry point
+- CIS & Microsoft baselines → More robust systems
+    - Disable LLMNR/NetBIOS → Legacy protocols for local networks → Does not rely on a DNS server
+    - Implement LAPS → Local Administrator Password Manager
+    - Remove administrative privileges from regular users
+    - Disable or configure Powershell → ConstrainedLanguage → Restrictive execution mode
+    - Microsoft Defender → Enable Attack Surface Reduction (ASR) rules
+    - Implement whitelisting → Tough
+    - Execution blocking
+        - Downloads, Desktop & AppData folders
+        - Scripts with extensions including .hta, .vbs, .cmd, .bat and .js
+    - Monitor LOLBin files
+    - Utilize host-based firewalls
+        - Block Workstation-to-Workstation & outbound LOLBins traffic
+    - Deploy Antimalware Scan Interface (AMSI) → Applications integrated in antimalware products → Enhanced detection
+
+**Network Protection**
+
+- Segmentation → Prevents spreading
+- Business-critical systems → Must be isolated → Unless there is a business justification
+- Internal resources → Avoid internet facing → Unless placed in a DMZ
+- IDS/IPS systems → SSL/TLS interception → Identify malicious traffic based on content
+- 802.1x → Port-based network access control → BYOD risk avoidance
+- Entra ID → Conditional Access policies → Managed devices → Authentication & authorization
+
+**Privilege Identity Management / MFA / Passwords**
+
+- Stolen privileged user credentials → AD escalation
+- Passphrases → Stronger than weak & complex passwords
+- Administrative access → Enable MFA
+
+**Vulnerability Scanning**
+
+- Continuous vulnerability scans → Can be automated
+- Fixes → Can be manual or requires network segmentation
+- Remediate at least "Critical" & "High" vulnerabilities
+
+**User Awareness Training**
+
+- Trained users → Reduced compromises
+- Periodic "surprises"
+    - Phishing
+    - USB drop attack
+
+**Active Directory Security Assessment**
+
+- Attacker's perspective → Detect misconfigurations or vulnerabilities
+- Own reviews → Smaller attack surface for privilege escalations
+- AD escalation paths & bugs → Constant catch up by administrators
+
+**Purple Team Exercises**
+
+- Security assessments → Performed by red team → Informs findings → Acknowledged by blue team → Incident handling testing → Continuous improvement
