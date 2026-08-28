@@ -281,3 +281,54 @@
 **Purple Team Exercises**
 
 - Security assessments → Performed by red team → Informs findings → Acknowledged by blue team → Incident handling testing → Continuous improvement
+
+## Detection & Analysis Stage
+
+- Based on multiple layers
+    - Sensors, logs and trained personnel
+    - Information & knowledge sharing
+    - Context-based threat intelligence
+    - Architecture segmentation → Network understanding
+- Attack vectors
+    - Abnormal behavior → Reported by employee
+    - Alerts from tools → EDR, IDS, Firewall and SIEM
+    - Threat hunting activities
+    - Third-party notifications
+- Detection levels
+    - Network perimeter → Firewalls, internet-facing NIDS/NIPS and DMZ
+    - Internal network → Firewalls & HIDS/HIPS
+    - Endpoint → Antivirus & EDR
+    - Application → Application & service logs
+
+### Initial Investigation
+
+- Establish context → Collect as much information as possible
+    - Incident Date/Time
+    - Who detected/reported
+    - How was detected
+    - What was detected
+    - Impacted systems
+    - Access & Audit logs → Ongoing or stopped activity
+    - Assets details → Physical locations, Operating systems, IP addresses, hostnames, system owners, current states
+- Build incident timeline → Overall picture
+    - Sorted evidence → Context from separate events
+    - Structured on attacker behavior → Date → Time of the event → Hostname → Event description → Data source
+
+### Incident Severity & Extent Questions
+
+- Exploitation impact & requirements
+- Impacted systems
+- Business-critical systems risk
+- Suggested remediation steps
+- Wilderness of the exploit
+- Worm-like capabilities
+
+### Incident Confidentiality & Communication
+
+- Need-to-know basis → Avoids → Insider risk → Misleads in stakeholders
+- Investigation expectations
+    - Type of incident
+    - Sources of evidence
+    - Time estimation
+    - Adversary identification
+    - Proper updates
